@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <title>Блог про футбол</title><!--Заголовок страницы на браузере-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <h1 align="center">Блог про футбол</h1><!--Заголовок страницы-->
+</head>
+    <nav>
+        <ul class="menu">
+            <li><a href="first html.html">Главная</a></li><!--Чтобы когда клиент нажимал вернулся на главную страницу-->
+
+            <li><a href="contact.html">Контакты</a></li><!--Чтобы клиент нажав переходил на страницу контакта-->
+            <li><a href="https://fifa.com" target="_blank">Сайт FIFA</a></li><!--Чтобы клиент узнал про другие новости про футбол-->
+            <li>
+        <a href="#" class="menu">Матчи</a>
+            <ul class="submenu">
+                <li><a href="past.html">Прошедшие матчи</a></li>
+                <li><a href="next.html">Предстоящие матчи</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+<div id="news"></div>
+    <!-- Навигационное меню в котором есть ссылки на другие страницы и внешний сайт -->
+    <h2 align="center">Сенсационное победа Казахстана против Дании</h2>
+    <p id="text_2">
+       Первый гол случился в середине первого тайма: защитник <i>«Милан»</i> Симон Кьяр длинным пасом нашел в чужой штрафной Расмуса Хейлунна и тот в ближнем бою переиграл кипера казахстанской сборной. Сложно сказать, что гол стал такой уж неожиданностью, так как скандинавы постоянно шли вперед, много и разнообразно комбинировали, но все-равно на наших футболистов он оказал действие «холодного душа». Сумбура в их действиях прибавилось настолько, что через 15 минут после первого взятия ворот случился и второй гол датчан – Хейлунн воспользовался неразберихой в штрафной соперника и добил мяч в сетку. Учитывая хет-трик в ворота сборной Финляндии ранее, этот гол стал для него уже пятым в отборочном турнире.
+       Перед нападающим <i>«Аталанты»</i> замаячила перспектива еще одного хет-трика во втором матче подряд, однако ей не суждено было воплотиться в жизнь. Можно только предполагать, что именно сказал в перерыве Магомед Адиев своим подопечным, однако во втором тайме казахстанцы заиграли совсем по-иному. Датчане, видимо, посчитав победу делом свершённым, отдали инициативу нашей команде и поплатились за это.Сначала реализовал пенальти Бактиёр Зайнутдинов за игру рукой Йонаса Винна, а с 86 по 89 минуты матча наступила кошмарная трёхминутка для вратаря «Ниццы» Каспера Шмейхеля: сначала великолепный дальний удар удался хавбеку сборной Казахстана Асхату Тагыбергену. А затем радиоуправляемый навес Яна Вороговского замкнул Абат Аймбетов, головой направив игровой снаряд в ближнюю девятку ворот. Арбитр добавил четыре минуты к игре, которые плавно трансформировались в шесть минут, был удален один из героев встречи Аймбетов, но «ястребы» удержали историческую для себя победу.</p><p></p>
+       <p></p>
+       <p></p>
+       <p></p>
+       <p></p>
+       <p></p>
+      <label for="color">Цвет текста:</label>
+<input type="text" id="color" placeholder="red">
+<br>
+<label for="fontSize">Размер текста:</label>
+<input type="text" id="fontSize" placeholder="20px">
+<br>
+<button id="applyStyleBtn">Применить стиль</button>
+    <!--Про событие в матче-->
+    <p>Подробнее можете узнать здесь. <button id="openTabBtn">Узнать подробнее</button> </p><!--Если клиент хочет узнать поподробнее об этом матче-->
+    <p id="countdown" class="time-box" align="center"></p>
+    <section>
+        <h3>Группа Н после 2 тура</h3>
+        <table border="2" cellpadding="8" cellspacing="2">
+                <caption><mark>Группа H</mark></caption>
+                <tr>
+                    <td>Команда</td>
+                    <td>И</td>
+                    <td>В</td>
+                    <td>Н</td>
+                    <td>П</td>
+                    <td>О</td>
+                </tr>
+                <tr>
+                    <th>Финляндия</th>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>Словения</th>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                 <th>Дания</th>
+                 <td>2</td>
+                 <td>1</td>
+                 <td>0</td>
+                 <td>1</td>
+                 <td>3</td>
+                </tr>
+                <tr>
+                  <th>Казахстан</th>  
+                  <td>2</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <th>Северная Ирландия</th>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3</td>  
+                </tr>
+                <tr>
+                  <th>Сан-Марино</th>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>0</td>  
+                </tr>
+        </table>
+
+
+        <section>
+    <h3>Данные о командах (из XML)</h3>
+    <table border="2" cellpadding="8" cellspacing="2">
+        <thead>
+            <tr>
+                <td>Команда</td>
+                <td>И</td>
+                <td>В</td>
+                <td>Н</td>
+                <td>П</td>
+                <td>О</td>
+            </tr>
+        </thead>
+        <tbody id="teamsTableBody"></tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Новости (из XML)</h3>
+    <div id="newsContainer"></div>
+</section>
+
+        <button id="sortTableBtn" allign="center">Сортировать таблицу по очкам</button>
+    </section>
+    <!--Таблица с результатами Группы Н-->
+   
+<div class="scale-box"><p class="text-block" id="text_1" style="color: red;" align="center"><a href="#" class="custom-link"> >>>Еще много новестей про футбол в нашем блоге.<<< </a></p>
+</div>
+</div>
+<canvas id="footballCanvas" width="500" height="300" style="border:1px solid #000000; display:block; margin:auto;"></canvas>
+<script src="Javascript\script.js"></script>
+
+<script>
+
+// Загрузка XML-файла и отображение данных
+function loadXMLData() {
+    fetch('data.xml')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+
+            // Обновляем таблицу команд
+            const teams = xmlDoc.getElementsByTagName('team');
+            const teamsTableBody = document.getElementById('teamsTableBody');
+            teamsTableBody.innerHTML = ''; // Очищаем таблицу перед заполнением
+
+            Array.from(teams).forEach(team => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${team.getAttribute('name')}</td>
+                    <td>${team.getAttribute('games')}</td>
+                    <td>${team.getAttribute('wins')}</td>
+                    <td>${team.getAttribute('draws')}</td>
+                    <td>${team.getAttribute('losses')}</td>
+                    <td>${team.getAttribute('points')}</td>
+                `;
+                teamsTableBody.appendChild(row);
+            });
+
+            // Обновляем блок с новостями
+            const news = xmlDoc.getElementsByTagName('item');
+            const newsContainer = document.getElementById('newsContainer');
+            newsContainer.innerHTML = ''; // Очищаем новости перед заполнением
+
+            Array.from(news).forEach(newsItem => {
+                const div = document.createElement('div');
+                div.textContent = newsItem.getAttribute('title');
+                newsContainer.appendChild(div);
+            });
+        })
+        .catch(err => console.error('Ошибка загрузки XML:', err));
+}
+
+// Загрузка данных при загрузке страницы
+document.addEventListener('DOMContentLoaded', loadXMLData);
+
+
+
+    
+// Открытие URL в новой вкладке
+document.getElementById('openTabBtn').addEventListener('click', function() {
+    const url = 'https://www.uefa.com/european-qualifiers/match/2036328--kazakhstan-vs-denmark/'; // URL для открытия
+    window.open(url, '_blank'); 
+});
+
+//Применения цвета и размера текста
+$(document).ready(function() {
+    $('#applyStyleBtn').click(function() {
+        const color = $('#color').val();
+        const fontSize = $('#fontSize').val();
+        if (color) $('#text_2').css('color', color);
+        if (fontSize) $('#text_2').css('font-size', fontSize);
+    });
+});
+
+
+
+
+// Сортировка таблицы
+$('#sortTableBtn').click(function () {
+    const $rows = $('table tbody tr');
+    const originalOrder = $rows.toArray(); // Сохраняем оригинальный порядок строк
+
+    // Сортируем строки по значениям в последнем столбце
+    const sortedRows = $rows.toArray().sort(function (a, b) {
+        return parseInt($(b).find('td:last').text()) - parseInt($(a).find('td:last').text());
+    });
+
+    // Для каждой строки определяем новое место
+    $(sortedRows).each(function (index, row) {
+        const $row = $(row);
+        const currentPosition = $row.position(); // Текущая позиция строки
+        const targetPosition = $(originalOrder[index]).position(); // Позиция, где строка должна быть
+
+        // Если строка переместилась, анимируем её перемещение
+        if (currentPosition.top !== targetPosition.top) {
+            $row.css({
+                position: 'relative',
+                top: currentPosition.top - targetPosition.top, // Сдвигаем к текущей позиции
+                left: 0
+            }).animate({
+                top: 0 // Возвращаем строку в её новую позицию
+            }, 600);
+
+        }
+    });
+
+    // После завершения анимации, перемещаем строки в DOM для сохранения порядка
+    setTimeout(() => {
+        $(sortedRows).appendTo('table tbody');
+        $rows.css({ position: '', top: '', left: '' }); // Сбрасываем стили строк
+    }, 1000);
+    $row.animate({ backgroundColor: '#ffff99' }, 500).animate({ backgroundColor: '#ffffff' }, 500);
+
+});
+
+
+const canvas = document.getElementById('footballCanvas');
+const ctx = canvas.getContext('2d');
+
+
+
+// Параметры мяча и анимации
+let ballRadius = 15;
+let x = canvas.width / 2;
+let y = canvas.height / 2;
+let dx = (Math.random() * 4 + 2) * (Math.random() < 0.5 ? 1 : -1); // Рандомное направление и скорость по x
+let dy = (Math.random() * 4 + 2) * (Math.random() < 0.5 ? 1 : -1); // Рандомное направление и скорость по y
+
+// Функция для рисования футбольного поля
+function drawField() {
+    ctx.fillStyle = "#008000"; // Травяной цвет
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Центральная линия
+    ctx.beginPath();
+    ctx.moveTo(canvas.width / 2, 0);
+    ctx.lineTo(canvas.width / 2, canvas.height);
+    ctx.strokeStyle = "#FFFFFF";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    
+    // Центральный круг
+    ctx.beginPath();
+    ctx.arc(canvas.width / 2, canvas.height / 2, 40, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Малые штрафные площадки
+    ctx.strokeRect(0, (canvas.height / 2) - 40, 50, 80); // Левая сторона
+    ctx.strokeRect(canvas.width - 50, (canvas.height / 2) - 40, 50, 80); // Правая сторона
+
+    // Большие штрафные площадки
+    ctx.strokeRect(0, (canvas.height / 2) - 90, 100, 180); // Левая сторона
+    ctx.strokeRect(canvas.width - 100, (canvas.height / 2) - 90, 100, 180); // Правая сторона
+}
+
+// Функция для рисования мяча
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+    ctx.fillStyle = "#FFFFFF"; // Белый цвет мяча
+    ctx.fill();
+    ctx.closePath();
+}
+
+function animate() {
+    // Рисуем поле и разметку
+    drawField();
+    
+    // Рисуем мяч
+    drawBall();
+    
+    // Обновляем координаты с учетом рандомного направления
+    x += dx;
+    y += dy;
+
+    // Отражение мяча от стенок
+    if (x + ballRadius > canvas.width || x - ballRadius < 0) {
+        dx = -dx; // Меняем направление по оси X
+    }
+    if (y + ballRadius > canvas.height || y - ballRadius < 0) {
+        dy = -dy; // Меняем направление по оси Y
+    }
+    
+    requestAnimationFrame(animate);
+}
+
+// Запускаем анимацию
+animate();
+</script>
+</body>
+</html>

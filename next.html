@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <title>Блог про футбол</title><!--Заголовок страницы на браузере-->
+</head>
+
+<body>
+    <h1 align="center">Блог про футбол</h1><!--Заголовок страницы-->
+</head>
+    <nav>
+        <ul class="menu">
+            <li><a href="first html.html">Главная</a></li><!--Чтобы когда клиент нажимал вернулся на главную страницу-->
+
+            <li><a href="contact.html">Контакты</a></li><!--Чтобы клиент нажав переходил на страницу контакта-->
+            <li><a href="https://fifa.com" target="_blank">Сайт FIFA</a></li><!--Чтобы клиент узнал про другие новости про футбол-->
+            <li>
+        <a href="#" class="menu">Матчи</a>
+            <ul class="submenu">
+                <li><a href="past.html">Прошедшие матчи</a></li>
+                <li><a href="next.html">Предстоящие матчи</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <p id="countdown" class="time-box" align="center"></p>
+<div id="results">
+        <h2>Результаты игроков</h2>
+        <div id="playerResults"></div>
+        <h3 id="totalGoals"></h3>
+        <h4 id="gameInfo"></h4>
+    </div>
+<script src="Javascript/script.js"></script>
+  <script>
+        // Массивы объектов для команд
+        const team1 = [
+            { name: "Мбаппе", goals: 5 },
+            { name: "Месси", goals: 7 }
+        ];
+
+        const team2 = [
+            { name: "Роналду", goals: 8 },
+            { name: "Неймар", goals: 2 }
+        ];
+
+        // Объект с информацией об игре
+        const game = {
+            teams: ["Команда А", "Команда Б"],
+            date: "2024-10-27",
+            location: "Париж"
+        };
+
+        // Дополнительный массив для хранения историй игр
+        const gamesHistory = [
+            { date: "2024-10-15", winner: "Команда А", score: "3:1" },
+            { date: "2024-10-20", winner: "Команда Б", score: "4:2" }
+        ];
+
+        // Функция для подсчёта голов команды
+        function calculateTeamGoals(team) {
+            let total = 0;
+            for (let player of team) {
+                total += player.goals;
+            }
+            return total;
+        }
+
+        // Функция для отображения результатов команды
+        function displayTeamResults(team, teamName) {
+            let resultHTML = `<h3>${teamName}:</h3>`;
+            for (let player of team) {
+                resultHTML += `<p>${player.name} забил ${player.goals} гол(ов)</p>`;
+            }
+            return resultHTML;
+        }
+
+        // Условие для проверки победителя на основе голов
+        const team1Goals = calculateTeamGoals(team1);
+        const team2Goals = calculateTeamGoals(team2);
+        let gameResult;
+        
+        if (team1Goals > team2Goals) { // Условие 1
+            gameResult = "Победитель: Команда А";
+        } else if (team1Goals < team2Goals) {
+            gameResult = "Победитель: Команда Б";
+        } else {
+            gameResult = "Матч закончился ничьей";
+        }
+
+        // Дополнительный цикл для отображения истории игр
+        let gamesHistoryHTML = "<h4>История игр:</h4>";
+        gamesHistory.forEach(game => { // Цикл forEach
+            gamesHistoryHTML += `<p>${game.date} - ${game.winner} победила с счётом ${game.score}</p>`;
+        });
+
+        // Отображение результатов команд и информации об игре на странице
+        document.getElementById("playerResults").innerHTML = 
+            displayTeamResults(team1, "Команда А") + 
+            displayTeamResults(team2, "Команда Б") + 
+            `<p><strong>${gameResult}</strong></p>`;
+
+        // Вывод общего количества голов и информации об игре
+        const totalGoals = team1Goals + team2Goals;
+        document.getElementById("totalGoals").innerText = "Общее количество голов всех игроков: " + totalGoals;
+        
+        // Информация об игре и истории игр
+        document.getElementById("gameInfo").innerHTML = 
+            `Игра: ${game.date}, ${game.location}. Участвующие команды: ${game.teams.join(" и ")}. <br>` + gamesHistoryHTML;
+
+    </script>
+</body>
+</html>

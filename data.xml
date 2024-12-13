@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<football>
+    <teams>
+        <team name="Финляндия" games="2" wins="2" draws="0" losses="0" points="6" />
+        <team name="Словения" games="2" wins="2" draws="0" losses="0" points="6" />
+        <team name="Дания" games="2" wins="1" draws="0" losses="1" points="3" />
+        <team name="Казахстан" games="2" wins="1" draws="0" losses="1" points="3" />
+        <team name="Северная Ирландия" games="2" wins="1" draws="0" losses="1" points="3" />
+        <team name="Сан-Марино" games="2" wins="0" draws="0" losses="2" points="0" />
+    </teams>
+    <news>
+        <item title="Сенсационная победа Казахстана над Данией" />
+        <item title="Франция-Англия: ключевые моменты" />
+        <item title="Словения уверенно обыграла Сан-Марино" />
+    </news>
+</football>
