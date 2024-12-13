@@ -1,0 +1,183 @@
+.styled-text {
+    border: 1px solid black; /* Видимая граница */
+    padding: 2cm 1cm 2cm 3cm; /* Верх: 2см, правый: 1см, нижний: 2см, левый: 3см */
+    background-color: #D3D3D3; /* Светло-серый фон */
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура Times New Roman */
+    font-size: 14pt; /* Кегль 14пт */
+    text-indent: 1.5cm; /* Абзацный отступ 1.5см */
+    color: green;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Горизонтальная тень, вертикальная тень, радиус размытия, цвет */
+    position: relative;
+}
+
+.styled-text::first-letter {
+    font-size: 18pt; /* Размер буквицы 18пт */
+    position: absolute;
+}
+/* Стиль для заголовка таблицы */
+table {
+
+    border-collapse: collapse; /* Убираем лишние пробелы между ячейками */
+    width: 100%; /* Таблица занимает 100% ширины */
+}
+
+/* Выравнивание заголовка по центру */
+table caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Выровненный по ширине первый столбец */
+table td:first-child {
+    text-align: justify;
+}
+
+/* Центрирование второго столбца */
+table td:nth-child(2) {
+    text-align: center;
+}
+
+/* Четные столбцы со светлым фоном */
+table td:nth-child(even) {
+    background-color: #f0f0f0; /* Светло-серый фон */
+}
+
+/* Нечетные столбцы с белым фоном */
+table td:nth-child(odd) {
+    background-color: white;
+}
+
+/* Общие стили для ячеек таблицы */
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+.image_style {
+    float: left; /* Изображение будет слева, текст обтекает справа */
+    margin: 10px 15px 10px 0; /* Отступы вокруг изображения: верх, правый, нижний, левый */
+    width: 200px; /* Ширина изображения */
+
+
+}
+
+/* Это базовый стиль, который применяется для всех абзацев */
+p {
+    color: black;
+}
+
+/* Этот стиль применяется ко всем элементам с классом text-block */
+.text-block {
+    color: blue;
+}
+
+/* Этот стиль применяется ко всем элементам с id unique-text, специфичность выше */
+#text_1 {
+    color: green;
+}
+.scale-box {
+    
+    transition: transform 0.5s ease; /* Плавная анимация при наведении */
+}
+
+.scale-box:hover {
+
+
+    transform: scale(1.2); /* Масштабирование до 120% */
+}
+a.custom-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #3498db; /* Синий цвет ссылки */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+a.custom-link:hover {
+    color: #e74c3c; /* Красный цвет при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Стили для ссылок */
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #333;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Подменю */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none; /* Подменю скрыто по умолчанию */
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 10px 20px;
+}
+
+/* Показываем подменю при наведении */
+.menu li:hover .submenu {
+    display: block;
+}
+.time-box{
+    border: 3px solid red; /* Синяя рамка */
+    padding: 10px;             /* Внутренний отступ для расстояния от текста до рамки */
+    display: inline-block;     /* Это нужно, чтобы рамка обтекала только содержимое текста */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    
+    border-radius: 20px;
+}
+
+#applyStyleBtn {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #008CBA;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #applyStyleBtn:hover {
+        background-color: #005f6b;
+    }
+#sortTableBtn {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #008CBA;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #sortTableBtn:hover {
+        background-color: #005f6b;
+    }
